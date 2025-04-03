@@ -15,9 +15,5 @@ This project explores a **quantitative portfolio allocation strategy** applied t
 3. **Performance Evaluation:** Assessed using **Sharpe Ratio, VaR, and volatility**.  
 4. **Risk Analysis:** Measured downside risk and sector concentration effects.  
 
-### **Findings**  
-- The **tech sector boom (2013–2020)** fueled **high returns**.  
-- **Sector concentration risk** led to **higher volatility**.  
-- **Low interest rates and macro tailwinds** supported stock price appreciation.  
 
 
