@@ -9,11 +9,6 @@ This project explores a **quantitative portfolio allocation strategy** applied t
 - ⚖ **Sharpe Ratio:** **1.30** – Indicating a good risk-adjusted return.  
 - 🔻 **Value at Risk (VaR 95%):** **-0.37%** – Measuring downside risk.  
 
-### **Methodology**  
-1. **Stock Selection:** Focused on high-growth **FAANG stocks**.  
-2. **Portfolio Construction:** Allocated funds using **quantitative metrics** to optimize returns.  
-3. **Performance Evaluation:** Assessed using **Sharpe Ratio, VaR, and volatility**.  
-4. **Risk Analysis:** Measured downside risk and sector concentration effects.  
 
 
 
