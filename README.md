@@ -15,6 +15,7 @@ This project explores a **quantitative portfolio allocation strategy** applied t
 3.  Performance Evaluation: Assessed using Sharpe Ratio, VaR, and volatility.
 4.  Risk Analysis: Measured downside risk and sector concentration effects.
 
+---
 
 ## 2. 📈 Stock Market Crash Analysis using Network Science | India (2008 vs. 2020)
 
@@ -46,4 +47,28 @@ By constructing dynamic correlation networks of 200 major Indian stocks using `y
   - `JINDALSTEL.NS`, `VEDL.NS`, `BAJAJFINSV.NS` emerged as hubs in 2020  
   - `KOTAKBANK.NS`, `ICICIBANK.NS`, `DLF.NS` dominated during 2008  
   These stocks acted as potential **shock propagators or stabilizers**, depending on their sector role.
+
+---
+
+# 3. 📈 Stock Seasonality Prediction using Next-Gen Reservoir Computing
+
+This project applies a **next-generation reservoir computing (RC)** algorithm to forecast the **seasonal component** of a stock price time series simulated using **Geometric Brownian Motion (GBM)**.
+This work builds directly on techniques developed during my **Master’s thesis**, where I explored advanced RC frameworks for modeling nonlinear dynamical systems.
+
+## 🧪 Methodology
+
+* The stock price was **simulated using GBM**, a widely used stochastic model in quantitative finance.
+* The resulting time series was **decomposed** into:
+
+  * **Trend**
+  * **Seasonal**
+  * **Residual**
+* Focused on **predicting the seasonal component**, which is often critical in short- to mid-term forecasting.
+* Used a **next-gen reservoir computing algorithm** trained on past seasonal patterns to forecast **100 future time steps**.
+
+## 📊 Results
+
+* **Prediction Horizon:** 100 time steps (days)
+* **Normalized MSE (NMSE):** 0.26
+* The model was able to **accurately capture the underlying seasonal structure** despite the stochasticity of the GBM process.
 
