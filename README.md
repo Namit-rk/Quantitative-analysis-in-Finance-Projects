@@ -50,12 +50,12 @@ By constructing dynamic correlation networks of 200 major Indian stocks using `y
 
 ---
 
-# 3. 📈 Stock Seasonality Prediction using Next-Gen Reservoir Computing
+## 3. 📈 Stock Seasonality Prediction using Next-Gen Reservoir Computing
 
 This project applies a **next-generation reservoir computing (RC)** algorithm to forecast the **seasonal component** of a stock price time series simulated using **Geometric Brownian Motion (GBM)**.
 This work builds directly on techniques developed during my **Master’s thesis**, where I explored advanced RC frameworks for modeling nonlinear dynamical systems.
 
-## 🧪 Methodology
+### 🧪 Methodology
 
 * The stock price was **simulated using GBM**, a widely used stochastic model in quantitative finance.
 * The resulting time series was **decomposed** into:
@@ -66,7 +66,7 @@ This work builds directly on techniques developed during my **Master’s thesis*
 * Focused on **predicting the seasonal component**, which is often critical in short- to mid-term forecasting.
 * Used a **next-gen reservoir computing algorithm** trained on past seasonal patterns to forecast **100 future time steps**.
 
-## 📊 Results
+### 📊 Results
 
 * **Prediction Horizon:** 100 time steps (days)
 * **Normalized MSE (NMSE):** 0.26
