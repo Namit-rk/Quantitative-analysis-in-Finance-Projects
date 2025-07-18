@@ -9,7 +9,6 @@ This project applies **Modern Portfolio Theory (MPT)** to construct and evaluate
    Five stocks were selected based on their strong performance up to 2023. After 2023, one stock underperformed while another showed exponential growth — introducing realistic variance and stress-testing the optimization strategy.
 
 2. **Expected Return & Covariance Estimation**
-
    * Computed **log returns** on pre-2023 data.
    * Estimated **expected returns (μ)** and **covariance matrix (Σ)**.
 
@@ -17,7 +16,6 @@ This project applies **Modern Portfolio Theory (MPT)** to construct and evaluate
 
    * Used **Markowitz mean-variance optimization**.
    * Constraints:
-
      * Fully invested (sum of weights = 1)
      * Long-only (no short-selling)
      * Expected return ≥ a target threshold
@@ -26,14 +24,12 @@ This project applies **Modern Portfolio Theory (MPT)** to construct and evaluate
 4. **Backtesting (2023–2025)**
 
    * Tested performance of:
-
      * The **optimized portfolio**
      * An **equal-weighted portfolio** (1/N allocation)
      * The **S\&P 500 index** (`^GSPC`) as a benchmark
 
 5. **Performance Metrics**
    For each portfolio:
-
    * Cumulative Return
    * Annualized Return (CAGR)
    * Sharpe Ratio
@@ -53,32 +49,8 @@ This project applies **Modern Portfolio Theory (MPT)** to construct and evaluate
 * ✅ **Optimized portfolio** showed better risk-adjusted performance with lower drawdown.
 * ⚖️ **Equal-weighted portfolio** had slightly higher raw returns, but at significantly higher risk.
 * 🆚 Both portfolios outperformed the **S\&P 500** in return and Sharpe ratio.
-
-### 🧠 Key Insights
-
 * Optimization via MPT can help create **more stable portfolios** with improved downside protection.
-* **Equal weighting** may offer high returns in certain environments, but risk can be substantially higher.
-* **Risk metrics** like Sharpe, CVaR, and Max Drawdown give deeper insights than return alone.
-
----
-
-## **2. Project Description: Smart Allocation of Funds in FAANG Companies – A Statistical Analysis**  
-
-### **Overview**  
-This project explores a **quantitative portfolio allocation strategy** applied to major tech stocks—**AAPL, GOOG, MSFT, AMZN, NFLX, and META**—from **2013 to 2020**. By using statistical and risk-based metrics, the study evaluates portfolio performance, balancing **return maximization and risk control**.In this project I walk Through my logic of using quantitative metrics to find an optimal aloocation of funds between the chosen stocks.
-
-### **Key Highlights**  
-- 📈 **Annual Return:** **23.53%** – Driven by the strong growth of FAANG stocks.  
-- 📉 **Volatility:** **18.10%** – Reflecting the inherent risks of tech investments.  
-- ⚖ **Sharpe Ratio:** **1.30** – Indicating a good risk-adjusted return.  
-- 🔻 **Value at Risk (VaR 95%):** **-0.37%** – Measuring downside risk.  
-
-### **Methodology**
-1.  Stock Selection: Focused on high-growth FAANG stocks.
-2.  Portfolio Construction: Allocated funds using quantitative metrics to optimize returns.
-3.  Performance Evaluation: Assessed using Sharpe Ratio, VaR, and volatility.
-4.  Risk Analysis: Measured downside risk and sector concentration effects.
-
+* 
 ---
 
 ## 2. 📈 Stock Market Crash Analysis using Network Science | India (2008 vs. 2020)
@@ -135,4 +107,25 @@ This work builds directly on techniques developed during my **Master’s thesis*
 * **Prediction Horizon:** 100 time steps (days)
 * **Normalized MSE (NMSE):** 0.26
 * The model was able to **accurately capture the underlying seasonal structure** despite the stochasticity of the GBM process.
+
+---
+
+## **4. Project Description: Smart Allocation of Funds in FAANG Companies – A Statistical Analysis**  
+
+### **Overview**  
+This project explores a **quantitative portfolio allocation strategy** applied to major tech stocks—**AAPL, GOOG, MSFT, AMZN, NFLX, and META**—from **2013 to 2020**. By using statistical and risk-based metrics, the study evaluates portfolio performance, balancing **return maximization and risk control**.In this project I walk Through my logic of using quantitative metrics to find an optimal aloocation of funds between the chosen stocks.
+
+### **Key Highlights**  
+- 📈 **Annual Return:** **23.53%** – Driven by the strong growth of FAANG stocks.  
+- 📉 **Volatility:** **18.10%** – Reflecting the inherent risks of tech investments.  
+- ⚖ **Sharpe Ratio:** **1.30** – Indicating a good risk-adjusted return.  
+- 🔻 **Value at Risk (VaR 95%):** **-0.37%** – Measuring downside risk.  
+
+### **Methodology**
+1.  Stock Selection: Focused on high-growth FAANG stocks.
+2.  Portfolio Construction: Allocated funds using quantitative metrics to optimize returns.
+3.  Performance Evaluation: Assessed using Sharpe Ratio, VaR, and volatility.
+4.  Risk Analysis: Measured downside risk and sector concentration effects.
+
+
 
