@@ -1,4 +1,68 @@
-## **1. Project Description: Smart Allocation of Funds in FAANG Companies – A Statistical Analysis**  
+
+## 1. Markowitz Portfolio Optimization & Backtesting
+
+This project applies **Modern Portfolio Theory (MPT)** to construct and evaluate an optimized portfolio of 5 selected U.S. stocks. The goal is to minimize portfolio risk for a given expected return and compare the performance of the optimized portfolio against an **equally-weighted portfolio** and the **S\&P 500 index**.
+
+### 🔧 Methodology
+
+1. **Stock Selection**
+   Five stocks were selected based on their strong performance up to 2023. After 2023, one stock underperformed while another showed exponential growth — introducing realistic variance and stress-testing the optimization strategy.
+
+2. **Expected Return & Covariance Estimation**
+
+   * Computed **log returns** on pre-2023 data.
+   * Estimated **expected returns (μ)** and **covariance matrix (Σ)**.
+
+3. **Portfolio Optimization**
+
+   * Used **Markowitz mean-variance optimization**.
+   * Constraints:
+
+     * Fully invested (sum of weights = 1)
+     * Long-only (no short-selling)
+     * Expected return ≥ a target threshold
+   * Visualized the **efficient frontier** and identified the **optimal Sharpe ratio portfolio**.
+
+4. **Backtesting (2023–2025)**
+
+   * Tested performance of:
+
+     * The **optimized portfolio**
+     * An **equal-weighted portfolio** (1/N allocation)
+     * The **S\&P 500 index** (`^GSPC`) as a benchmark
+
+5. **Performance Metrics**
+   For each portfolio:
+
+   * Cumulative Return
+   * Annualized Return (CAGR)
+   * Sharpe Ratio
+   * Maximum Drawdown
+   * Conditional Value at Risk (CVaR) at 95%
+
+### 📊 Results Summary
+
+| Metric            | Optimized Portfolio | Equal-Weighted | S\&P 500 |
+| ----------------- | ------------------- | -------------- | -------- |
+| Cumulative Return | 84.8%               | 107.7%         | 54.4%    |
+| Annualized Return | 36.3%               | 44.6%          | 24.5%    |
+| Sharpe Ratio      | 1.51                | 1.31           | 1.20     |
+| Max Drawdown      | -14.1%              | -31.1%         | -10.2%   |
+| CVaR (95%)        | -3.0%               | -3.9%          | -1.7%    |
+
+* ✅ **Optimized portfolio** showed better risk-adjusted performance with lower drawdown.
+* ⚖️ **Equal-weighted portfolio** had slightly higher raw returns, but at significantly higher risk.
+* 🆚 Both portfolios outperformed the **S\&P 500** in return and Sharpe ratio.
+
+### 🧠 Key Insights
+
+* Optimization via MPT can help create **more stable portfolios** with improved downside protection.
+* **Equal weighting** may offer high returns in certain environments, but risk can be substantially higher.
+* **Risk metrics** like Sharpe, CVaR, and Max Drawdown give deeper insights than return alone.
+
+---
+
+## **2. Project Description: Smart Allocation of Funds in FAANG Companies – A Statistical Analysis**  
 
 ### **Overview**  
 This project explores a **quantitative portfolio allocation strategy** applied to major tech stocks—**AAPL, GOOG, MSFT, AMZN, NFLX, and META**—from **2013 to 2020**. By using statistical and risk-based metrics, the study evaluates portfolio performance, balancing **return maximization and risk control**.In this project I walk Through my logic of using quantitative metrics to find an optimal aloocation of funds between the chosen stocks.
